@@ -9,7 +9,7 @@
     <relativePath></relativePath>
   </parent>
   <groupId>org.springframework.cloud.stream.app</groupId>
-  <artifactId>http-transformer-kotlin-processor</artifactId>
+  <artifactId>http-transformer-kotlin</artifactId>
   <version>2.1.0.BUILD-SNAPSHOT</version>
   <name>http-source-rabbit</name>
   <description>Spring Cloud Stream Http Transformer Kotlin Processor with Rabbit Binder Application</description>
