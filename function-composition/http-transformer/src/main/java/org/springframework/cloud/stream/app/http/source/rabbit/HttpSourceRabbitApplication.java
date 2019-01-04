@@ -21,27 +21,21 @@ import java.util.function.Function;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 
 @SpringBootApplication
-@Import({org.springframework.cloud.stream.app.http.source.HttpSourceConfiguration.class,
-		HttpSourceRabbitApplication.FunctionProcessorConfiguration.class })
+@Import(org.springframework.cloud.stream.app.http.source.HttpSourceConfiguration.class)
 public class HttpSourceRabbitApplication {
 
-	@Configuration
-	public static class FunctionProcessorConfiguration {
+	@Bean
+	public Function<String, String> upper() {
+		return value -> value.toUpperCase();
+	}
 
-		@Bean
-		public Function<String, String> upper() {
-			return value -> value.toUpperCase();
-		}
-
-		@Bean
-		public Function<String, String> concat() {
-			return value -> "Hello "+ value;
-		}
+	@Bean
+	public Function<String, String> concat() {
+		return value -> "Hello "+ value;
 	}
 
 
