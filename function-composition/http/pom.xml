@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.0.BUILD-SNAPSHOT</version>
+    <version>2.1.0.RELEASE</version>
     <relativePath></relativePath>
   </parent>
   <groupId>org.springframework.cloud.stream.app</groupId>
@@ -35,14 +35,14 @@
       <dependency>
         <groupId>org.springframework.cloud.stream.app</groupId>
         <artifactId>http-app-dependencies</artifactId>
-        <version>2.1.0.BUILD-SNAPSHOT</version>
+        <version>2.1.0.M2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud.stream.app</groupId>
         <artifactId>app-starters-core-dependencies</artifactId>
-        <version>2.1.0.BUILD-SNAPSHOT</version>
+        <version>2.1.0.M2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
